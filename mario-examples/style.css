@@ -41,11 +41,22 @@ html, body{
 
 /*// ELEMENTS TO ANIMATE //*/
 
-
+.mario {
+  position: absolute;
+  top: -40px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
 
 /*// KEYFRAMES //*/
 
-
+@keyframes drive {
+  from{transform: translateX(-10vw)}
+  to{transform: translateX(120vw)}
+}
 
 
 
